@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     void Start()
     { 
         GameManager.Instance.MakeUserData();
-        Refresh(GameManager.Instance.UserData);  
+        Refresh(GameManager.Instance.userdata);  
     }
     public void Refresh(UserData userdata)
     {
