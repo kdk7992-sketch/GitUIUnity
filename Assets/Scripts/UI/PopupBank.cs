@@ -53,6 +53,7 @@ public class PopupBank : MonoBehaviour
         data.Cash -= amount;
         data.Balance += amount;
 
+        GameManager.Instance.SaveUserData();
         uiManager.Refresh(data);
     }
 
@@ -73,6 +74,7 @@ public class PopupBank : MonoBehaviour
         data.Cash += amount;
         data.Balance -= amount;
 
+        GameManager.Instance.SaveUserData();
         uiManager.Refresh(data);
     }
     public void OnClickWithDrawInput()

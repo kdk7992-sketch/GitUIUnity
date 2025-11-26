@@ -8,7 +8,6 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI balanceText;
     void Start()
     { 
-        GameManager.Instance.MakeUserData();
         Refresh(GameManager.Instance.userdata);  
     }
     public void Refresh(UserData userdata)
